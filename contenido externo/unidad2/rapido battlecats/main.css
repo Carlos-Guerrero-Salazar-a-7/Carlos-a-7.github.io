@@ -1,0 +1,356 @@
+
+body{
+    background-color: #ffb2b2;
+    margin: 0;
+}
+
+main{
+    width: 90%;
+    height: 95vh;
+    margin: 2.5vh auto; 
+    background-color: #950f0fe1;
+    border-radius: 30px;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+#video-background {
+            position: fixed; /* Fija el video en la vista */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+            z-index: -1; /* Mueve el video al fondo, detrás de todo el contenido */
+
+            /* --- La clave para el "Alpha más bajo" --- */
+            opacity: 0.4; /* Ajusta la opacidad. 1.0 es totalmente opaco, 0.0 es invisible. */
+        }
+
+.lista-iconos-izquierda {
+    width: 70px;
+    background-color: #790c0c;
+    border-radius: 30px 0 0 30px;
+    padding: 20px 0;
+    flex-shrink: 0;
+}
+.lista-iconos-izquierda .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.olsta-derecha {
+    width: 200px;
+    background-color: #830e0e;
+    border-radius: 0 30px 30px 0;
+    flex-shrink: 0;
+}
+
+.contenido-principal {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headers{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.barra_busqueda_container{
+    background-color: #2a1717;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.barra_busqueda {
+    color: #a7a7a7;
+    font-weight: normal;
+}
+
+.barra_busqueda_container img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.barra_busqueda_container input{
+    background-color: #2a1717;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    color: white;
+}
+.barra_busqueda_container input:focus {
+    outline: none;
+}
+
+.headers .botones{
+    display: flex;
+    gap: 15px;  
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.imagen_fondo_circular{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #470f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.perfil_usuario {
+    background-color: white;
+    border: 2px solid white;
+}
+
+.imagen_fondo_circular img{
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: -10px; 
+}
+
+.area-de-juegos{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+.cuadro_juego{
+    background: linear-gradient(135deg, #fec0c2 0%, #950f0f 80%);
+    border-radius: 20px;
+    padding: 25px;
+    width: 50%; 
+    height: min-content;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    position: relative; 
+    overflow: hidden; 
+}
+.cuadro_juego .contenido_cuadro{
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.izquierda_cuadrojuego {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+}
+
+.cuadro_juego h1 {
+    font-size: 36px;
+    color: black;
+    margin-top: 10px;
+}
+.cuadro_juego p {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+.botones_horizontales{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.texto_cuadroblanco{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 5px 12px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.derecha_cuadrojuego {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; 
+    height: 100%;
+    z-index: 2;
+}
+
+.derecha_cuadrojuego .imagen_juego img {
+    width: 100%;
+    height: 120%;
+    right: -10%;
+    bottom: -15%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.imagen_juego   :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.area-de-juegos-derecha {
+    width: 40%; /* El resto del espacio disponible */
+    flex-shrink: 0; /* Evita que se encoja si no hay espacio */
+    background-color: #830e0e; /* Un color de fondo para distinguirlo */
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 5%;
+}
+
+.lista-juegos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Apila los juegos verticalmente */
+    gap: 15px; /* Espacio entre cada juego */
+}
+
+.juego-item {
+    display: flex;
+    align-items: center;
+    background-color: #790c0c; /* Color de fondo para cada item */
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    justify-content: space-between; /* CLAVE: Para empujar la flecha a la derecha */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.juego-item:hover {
+    background-color: #6a0b0b;
+}
+.cuadrado_imagen img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* El nombre del juego puede necesitar un contenedor para que la flecha se separe */
+.juego-nombre {
+    flex-grow: 1; /* Permite que el nombre ocupe el espacio antes de la flecha */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.juego-item .flecha {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb2b2; /* Un color claro para el ícono de la flecha */
+    margin-left: 10px;
+}
+
+
+.carta_juego {
+    background-color: #6a0b0b;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: calc(33.33% - 13.33px); /* 3 cartas con espacio */
+    height: min-content;
+    cursor: pointer;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Transición para la animación */
+    transform-style: preserve-3d; /* Esencial para la rotación 3D */
+    border: 3px solid transparent; /* Borde para indicar la selección */
+}
+
+.carta_juego:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.lista_cartas_juegos {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 53%; /* Ajuste de ancho para esta lista */
+    flex-shrink: 0;
+}
+.imagen_carta_juego {
+    width: 100%;
+    height: 120px; /* Altura de la imagen */
+    overflow: hidden;
+}
+
+.imagen_carta_juego img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nombre_carta_juego {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.reloj {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ffffff;
+    border-radius: 50%; /* Esto lo convierte en círculo */
+    position: relative;
+    margin: 50px auto;
+}
+
+/* Estilo base para todas las manecillas */
+.manecilla {
+    position: absolute;
+    left: 50%;
+    transform-origin: 50% 100%; /* Esto asegura que la rotación sea desde la base de la manecilla */
+    /* Posicionar y centrar la manecilla */
+    top: 50%;
+    margin-left: -1px; /* Ajuste para centrar */
+}
+
+.hora {
+    width: 4px;
+    height: 100px;
+    background-color: red;
+}

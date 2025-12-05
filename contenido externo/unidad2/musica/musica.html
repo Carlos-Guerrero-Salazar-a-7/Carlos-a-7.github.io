@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <div class="player">
+        <h1>Reproductor de Música</h1>
+        <div class="song-info">
+            <div class="song-title" id="songTitle">Canción</div>
+            <div class="song-time">
+                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <input type="range" id="progressBar" value="0" min="0" max="100">
+
+        <div class="controls">
+            <button onclick="lastSong()"><<</button>
+            <button onclick="skipBackward()"><</button>
+            <button class="play-pause" onclick="togglePlay()" id="playBtn">▶</button>
+            <button onclick="skipForward()">></button>
+            <button onclick="nextSong()">>></button>
+        </div>
+        <audio id="audio"></audio>
+    </div>
+</body>
+    <script src="escuchar.js"></script>
+</html>

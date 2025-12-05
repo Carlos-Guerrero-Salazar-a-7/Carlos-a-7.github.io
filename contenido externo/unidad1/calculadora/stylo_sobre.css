@@ -1,0 +1,62 @@
+body{
+    width: 50%;
+    margin: auto;
+    background: linear-gradient(#6ec5ff,    #5728ff);
+    height: 100%;
+}
+
+
+header{
+    font-size: larger;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+section{
+    background-color: gray;
+    border: 2px solid black;
+}
+#calculadora{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 20px;
+}
+#calculo{
+    width: 100%;
+    margin: auto;
+    text-align: right;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+#cuadricula{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.3em;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#resultado{
+    width: 100%;
+    margin: auto;
+    text-align: right;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+
+}

@@ -1,0 +1,33 @@
+html{
+    background-color: #F4E4BC;
+
+}
+header{
+    color: #7B3F00;
+    text-align: right;
+    padding: 10px;
+    font-size: 36px;
+    font-family: monospace;
+}
+
+hr{
+    margin-bottom: 15px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;    
+}
+
+.cuadro-1{
+    background-color: #9c9c9c;
+    border: 2px solid #B68E54;
+    padding: 20px;
+    width: 33%;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    font-family: 'Courier New', Courier, monospace;
+}
+.cuadro-1 img{
+    width: 100%;
+    height: auto;
+}

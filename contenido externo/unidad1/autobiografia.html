@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>biografia</title>
+</head>
+<body>
+    <link rel="stylesheet" href="stylo_sobre.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+            background-color: rgb(250, 243, 181);
+        }
+        header{
+            text-align: center;
+            background-color: rgb(253, 175, 102);
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            margin-right: 10%;
+        }
+        nav ul{ 
+            display: flex;
+        }
+        br{
+            background-color: rgb(253, 175, 102);
+        }
+        nav ul li{
+            padding-right: 20%;
+            width: max-content;
+            color:red
+        }
+        article{
+            background-color: rgb(243, 255, 137);
+            text-align: justify;
+        }
+        section{
+            background-color: lightyellow;
+        }
+        aside{
+            background-color: rgb(144, 232, 238);
+        }
+        #tabladecontenido{
+            background-color: lightgrey;
+        }
+        main{
+            padding: 10px;
+            background-color: rgb(249, 255, 158);
+        }
+        footer{
+            background-color: black;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        footer section a{
+            background-color: black;
+            color:white
+        }
+        section{
+            background-color: rgb(226, 164, 93);
+        }
+    </style>
+    <Header id="inicio" >
+        <h1>Carlos Gael Guerrero Salazar</h1>
+        <p>Estudiante de Ingeniería en Computación</p>
+        <nav>
+        <ul>
+            <li><a href="#niñez" value="busca el elemento">niñez</a></li>
+            <li><a href="#adolecencia" value="busca el elemento">adolecencia</a></li>
+            <li><a href="#actualidad" value="busca el elemento">actualidad</a></li>
+        </ul>
+    </nav>
+    </Header>
+    <hr color="black" size="5">
+    <Main>
+        <article>
+            <h2>Autobiografia</h2>
+            <dt>
+                <li>Estudiante de la Universidad Politecnica de Victoria</li>
+                <dd>19 años de edad</dd>
+            </dt>
+        </article>
+        <p>
+            Es una persona amable, responsable y aplicable pero con la dificultadd de ser alguien dificil de tratar
+            <br>
+            estudio en los siguientes lugares y opina lo siguiente de cada lugar:
+        </p>
+            <img src="yo.jpg" alt="foto de perfil" width="250" height="250">
+        <br>
+        <section>
+            <br>
+            <article id="niñez">
+            <p id="niñez">
+                <b>Mi niñez</b>
+                <br>
+                naci en Ciudad Victoria, Tamaulipas el 22 de Junio del 2006,no tengo muchos recuerdos de la mayoria de mis primeros años pero estoy seguro que fueron bonitos
+                para mi y mi familia, lo que me acuerdo es que por razones familiares pasaba de guarderia en guarderia mis dias.
+                <br>
+                la mayoria de mis recuerdos son a los 6 o 5 años que presiento que obtuve conciencia en esa epoca 
+            </p>
+            </article>
+            <article id="adolecencia">
+            <p id="adolecencia">
+                <b>Mi adolecencia</b>
+                <br>
+                se baso en que no me agradaba quien era y no tenia un rumbo a donde ir pero con el tiempo me fui enfocando en mi rumbo, principalmente
+                mi problema se basaba en que soy dependiente en la aceptación de personas pero no me siento feliz en buscar esa atencion<
+            </p>
+            </article>
+            <article id="actualidad">
+                <p id="actualidad">
+                    <b>actualidad</b>
+                    <br>
+                    Actualmente estoy estudiando en la Universidad Politecnica de Victoria, en la carrera de Ingenieria en Computacion, me gusta mucho la carrera y espero
+                    poder llegar a ser un buen profesional en el area.
+                    <br>
+                </p>
+            </article>
+            <aside id="lugares">
+                </p>
+                <ol id="ol">
+                    <li><b>Escuela Primaria: Club Rotario Matutina</b><dd>"Fue un lugar calmado y conoci gente que actualmente sigo viendo"</dd></li>
+                    <li><b>Secundaria: Secundaria General No. 4 </b><dd>"Me gusto el lugar y me enseño lo que me gustaria ser pero se sentia un lugar más desolado de lo esperado"</dd></li>
+                    <li><b>Preparatoria: CBTIS 236</b><dd>"un lugar muy bonito donde pase mis mejores años en mi opinion"</dd></li>
+                </ol>
+                </p>
+            </asides>
+        </section>
+        <section id="tabladecontenido   ">
+            <table border="1" id="tabla" class="tablas">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Escuela Actual</th>
+                    <th>Carrera</th>
+                </tr>
+                <tr>
+                    <td>Carlos Gael Guerrero Salazar</td>
+                    <td>19 años</td>
+                    <td>Universidad Politecnica de Victoria</td>
+                    <td>Ingenieria en Computacion</td>
+                </tr>
+            </table>
+            <form action="#" method="post">
+            <fieldset>
+                <div>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre"><br>
+                </div>
+                <br>    
+                <div>
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+            </form>
+        </section>
+    </Main>
+    <footer>
+        <section>
+            <p>&copy;derechos reservados a gael :D:mi Blog personal</p>
+            <a href="#inicio">Regresar al inicio</a>
+        </section>
+    </footer>
+</body>
+</html>

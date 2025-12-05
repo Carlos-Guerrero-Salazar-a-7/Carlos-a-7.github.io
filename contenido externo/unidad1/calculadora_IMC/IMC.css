@@ -1,0 +1,37 @@
+body{
+    background-color: gray;
+}
+form{
+    width: 100%;
+    margin: auto;
+}
+
+main{
+    width: 1200px;
+    margin: auto;
+    padding: 2%;
+    background-color: white;
+}
+
+section{
+    width: 100%;
+    height: max-content;
+    align-items: center;
+}
+aside{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#ajuste{
+    display: flex;
+    margin: 2%;
+}
+#ajuste label{
+    width: 20%; 
+    font-family: 'Courier New', Courier, monospace;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+}

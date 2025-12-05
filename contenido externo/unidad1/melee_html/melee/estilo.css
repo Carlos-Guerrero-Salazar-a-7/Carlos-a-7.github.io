@@ -1,0 +1,141 @@
+body{
+    background-image: url(final.png);
+    background-repeat: no-repeat;
+    width: 1200px;
+    margin: auto;
+    background-repeat: repeat-x;    
+    margin: auto;
+}
+header{
+    background-image: linear-gradient(black,grey,white);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    display:flex;
+    margin: 0;
+    padding: 0;
+}
+
+header img{
+    width: 100px;
+    height: 50;
+    padding: 3rem;
+}
+header div{
+    text-align: left;  
+}
+
+nav{
+    background-image: linear-gradient(to right,     rgb(139, 139, 139),rgb(190, 124, 0) ,rgb(143, 0, 0));
+    color: white;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+nav ul li a:hover{
+    transform: scale(1.2);
+}
+#contenido{
+    color:black;
+}
+section article{
+    padding-left: 10px;
+}
+#movimiento{
+    background-color: gray;
+    color: black;
+}
+#movimiento img{
+    float:right;
+    padding-right: 10px;
+}
+#explicaciones{
+    display: flex;
+    align-items: center;
+}
+#explicaciones img{
+    height: 150px;
+    width: 350px;
+    padding-right: 10px;
+}
+
+footer{
+
+    background-image: linear-gradient(white,rgb(31, 31, 31),black);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+}
+footer>p{
+    width: 30%;
+    padding: 1rem 3rem;
+    text-align: left;
+}
+footer div{
+    width: 70%;
+    text-align: justify;
+    display: block;
+    padding: 1rem 2rem
+}
+footer img{
+    width: 109px;
+    height: 63px;
+    padding: 2rem
+}
+#personajes{
+    background-image: linear-gradient(black,rgb(2, 11, 51));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+#personajes img{
+    width: 120px;
+    height: 120px;
+    transform: transform 0.2 ease;
+}
+#personajes img:hover{
+    transform: scale(1.2);
+}
+#gif {
+    background-image: linear-gradient(black, rgb(2, 11, 51));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+#gif img {
+    width: max-content;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+#gif img:hover {
+    transform: scale(2.0);
+}
+
+#fondo_negro{
+    background-image: linear-gradient(black,rgb(2, 11, 51));
+    color: white;
+    justify-items: center;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+}
